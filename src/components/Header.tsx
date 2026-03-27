@@ -53,9 +53,16 @@ export function Header() {
 
           {/* Right side */}
           <div className="flex items-center space-x-6">
-            <button className="hidden lg:block text-sm font-medium tracking-widest uppercase hover:text-accent transition-colors duration-300">
+            <NavLink
+              to="/contacts"
+              className={({ isActive }) =>
+                `hidden lg:block text-sm font-medium tracking-widest uppercase transition-colors duration-300 ${
+                  isActive ? 'text-accent' : 'hover:text-accent'
+                }`
+              }
+            >
               Контакты
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>
