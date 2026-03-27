@@ -49,7 +49,7 @@ export function SecretsSection() {
           <div className="order-2 lg:order-1 relative group">
             <div className="absolute inset-0 bg-accent/10 transform translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-6 group-hover:translate-y-6" />
             <img
-              src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&q=80&w=800"
+              src="/fillings/pistachio-2.jpg"
               alt="Текстура и начинка кулича крупным планом"
               className="w-full aspect-[4/5] object-cover shadow-md"
             />
@@ -124,7 +124,7 @@ export function SecretsSection() {
           <div className="relative group">
             <div className="absolute inset-0 bg-accent/10 transform -translate-x-4 translate-y-4 -z-10 transition-transform group-hover:-translate-x-6 group-hover:translate-y-6" />
             <img
-              src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&q=80&w=800"
+              src="/decoration/nest-2.jpg"
               alt="Оформление пасхального стола и упаковка"
               className="w-full aspect-[4/5] object-cover shadow-md"
             />

@@ -50,8 +50,8 @@ export function HeroSection() {
           {/* Main image */}
           <div className="absolute right-4 lg:right-0 top-0 w-[65%] sm:w-[55%] h-[85%] z-10 shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
             <img
-              src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&q=80&w=800"
-              alt="Целый пасхальный кулич с цветами"
+              src="/other/table-1.jpg"
+              alt="Стол с пасхальной выпечкой"
               className="w-full h-full object-cover arch-mask border-8 border-cream-light"
             />
           </div>
@@ -59,8 +59,8 @@ export function HeroSection() {
           {/* Secondary image */}
           <div className="absolute left-4 lg:left-12 bottom-0 w-[60%] sm:w-[50%] h-[60%] z-20 shadow-xl transition-transform duration-700 hover:scale-[1.03]">
             <img
-              src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&q=80&w=800"
-              alt="Кулич в разрезе с начинкой"
+              src="/other/table-2.jpg"
+              alt="Авторская выпечка Ля Рулет"
               className="w-full h-full object-cover rounded-sm border-8 border-cream-light"
             />
 
