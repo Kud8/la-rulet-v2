@@ -38,9 +38,9 @@ export function Header() {
             >
               Каталог
             </NavLink>
-            <a href="#" className="text-sm font-medium tracking-widest uppercase hover:text-accent transition-colors duration-300">
-              О нас
-            </a>
+            {/*<a href="#" className="text-sm font-medium tracking-widest uppercase hover:text-accent transition-colors duration-300">*/}
+            {/*  О нас*/}
+            {/*</a>*/}
           </nav>
 
           {/* Logo */}
@@ -48,7 +48,7 @@ export function Header() {
             to="/"
             className="absolute left-1/2 transform -translate-x-1/2"
           >
-            <img src="/logo.png" alt="Ля Рулет" className="h-14" style={{ background: '#2a221cf0', borderRadius: '70px', padding: '10px 30px', boxSizing: "content-box" }} />
+            <img src="/logo-2.png" alt="Ля Рулет" className="h-14"/>
           </NavLink>
 
           {/* Right side */}

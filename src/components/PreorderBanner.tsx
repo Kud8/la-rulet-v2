@@ -15,15 +15,21 @@ export function PreorderBanner() {
             Предзаказ к Светлой Пасхе
           </h2>
           <p className="font-sans font-light text-cream/80 tracking-wide">
-            Принимаем заказы до 28 апреля. Выдача 3-4 мая.
+            Принимаем заказы до 3 апреля.
           </p>
         </div>
 
         <div className="flex items-center gap-6">
           <div className="text-center">
-            <span className="block font-serif text-4xl text-accent mb-1">15</span>
+            <span className="block font-serif text-4xl text-accent mb-1">8</span>
             <span className="text-[10px] uppercase tracking-widest text-cream/70">
               Видов декора
+            </span>
+          </div>
+          <div className="text-center">
+            <span className="block font-serif text-4xl text-accent mb-1">4</span>
+            <span className="text-[10px] uppercase tracking-widest text-cream/70">
+              Начинки
             </span>
           </div>
           <div className="w-px h-12 bg-cream/20" />
