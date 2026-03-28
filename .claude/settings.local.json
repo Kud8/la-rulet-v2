@@ -8,7 +8,8 @@
       "Bash(python3:*)",
       "Bash(grep:*)",
       "Bash(grep -n \"<img\" /Users/dmitry/WebstormProjects/la-rulet-v2/src/components/*.tsx)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(xargs sed:*)"
     ]
   }
 }

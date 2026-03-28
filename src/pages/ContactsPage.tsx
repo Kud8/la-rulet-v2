@@ -58,16 +58,16 @@ export function ContactsPage() {
     <Helmet>
       <title>Контакты — Ля Рулет, Волгодонск</title>
       <meta name="description" content="Три точки кафе-кондитерской Ля Рулет в Волгодонске: БВП 47А, ТРЦ Весенний, Магнит на Курчатова. Телефон, соцсети, время работы." />
-      <link rel="canonical" href="https://лярулет.рф/contacts" />
+      <link rel="canonical" href="https://xn--e1alatmd6f.xn--p1ai/contacts" />
       <meta property="og:title" content="Контакты — Ля Рулет, Волгодонск" />
       <meta property="og:description" content="Три точки кафе-кондитерской Ля Рулет в Волгодонске. Адреса, телефон и время работы." />
-      <meta property="og:url" content="https://лярулет.рф/contacts" />
+      <meta property="og:url" content="https://xn--e1alatmd6f.xn--p1ai/contacts" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://лярулет.рф/" },
-          { "@type": "ListItem", "position": 2, "name": "Контакты", "item": "https://лярулет.рф/contacts" }
+          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://xn--e1alatmd6f.xn--p1ai/" },
+          { "@type": "ListItem", "position": 2, "name": "Контакты", "item": "https://xn--e1alatmd6f.xn--p1ai/contacts" }
         ]
       })}</script>
       <script type="application/ld+json">{JSON.stringify([
@@ -75,7 +75,7 @@ export function ContactsPage() {
           "@context": "https://schema.org",
           "@type": "Bakery",
           "name": "Ля Рулет",
-          "url": "https://лярулет.рф",
+          "url": "https://xn--e1alatmd6f.xn--p1ai",
           "telephone": "+79959898598",
           "email": "info@rouletterie.ru",
           "address": {
@@ -96,7 +96,7 @@ export function ContactsPage() {
           "@context": "https://schema.org",
           "@type": "Bakery",
           "name": "Ля Рулет — ТРЦ Весенний",
-          "url": "https://лярулет.рф",
+          "url": "https://xn--e1alatmd6f.xn--p1ai",
           "telephone": "+79959898598",
           "address": {
             "@type": "PostalAddress",
@@ -116,7 +116,7 @@ export function ContactsPage() {
           "@context": "https://schema.org",
           "@type": "Bakery",
           "name": "Ля Рулет — Магнит на Курчатова",
-          "url": "https://лярулет.рф",
+          "url": "https://xn--e1alatmd6f.xn--p1ai",
           "telephone": "+79959898598",
           "address": {
             "@type": "PostalAddress",

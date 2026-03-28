@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://лярулет.рф/sitemap.xml
+Sitemap: https://xn--e1alatmd6f.xn--p1ai/sitemap.xml

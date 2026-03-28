@@ -7,19 +7,19 @@ export function HomePage() {
       <Helmet>
         <title>Ля Рулет — Авторские куличи и десерты в Волгодонске</title>
         <meta name="description" content="Кафе-кондитерская Ля Рулет в Волгодонске. Авторские куличи ручной работы с богатыми начинками и изысканным декором. Три точки в городе. Предзаказ онлайн." />
-        <link rel="canonical" href="https://лярулет.рф/" />
+        <link rel="canonical" href="https://xn--e1alatmd6f.xn--p1ai/" />
         <meta property="og:title" content="Ля Рулет — Авторские куличи и десерты в Волгодонске" />
         <meta property="og:description" content="Кафе-кондитерская Ля Рулет в Волгодонске. Авторские куличи ручной работы с богатыми начинками и изысканным декором." />
-        <meta property="og:url" content="https://лярулет.рф/" />
+        <meta property="og:url" content="https://xn--e1alatmd6f.xn--p1ai/" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Bakery",
           "name": "Ля Рулет",
           "description": "Кафе-кондитерская в Волгодонске. Авторские куличи ручной работы с богатыми начинками и изысканным декором.",
-          "url": "https://лярулет.рф",
+          "url": "https://xn--e1alatmd6f.xn--p1ai",
           "telephone": "+79959898598",
           "email": "info@rouletterie.ru",
-          "image": "https://лярулет.рф/og-image.jpg",
+          "image": "https://xn--e1alatmd6f.xn--p1ai/og-image.jpg",
           "priceRange": "₽₽",
           "servesCuisine": "Кондитерская",
           "address": [

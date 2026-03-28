@@ -47,23 +47,23 @@ export function CatalogPage() {
     <Helmet>
       <title>Каталог куличей — Ля Рулет, Волгодонск</title>
       <meta name="description" content="Каталог авторских куличей Ля Рулет. Сливочный, кофейный, фисташковый и шоколадный крем. Богатый декор на выбор. Ручная работа, г. Волгодонск." />
-      <link rel="canonical" href="https://лярулет.рф/catalog" />
+      <link rel="canonical" href="https://xn--e1alatmd6f.xn--p1ai/catalog" />
       <meta property="og:title" content="Каталог куличей — Ля Рулет, Волгодонск" />
       <meta property="og:description" content="Авторские куличи с богатыми начинками и изысканным декором. Ручная работа от шеф-кондитера." />
-      <meta property="og:url" content="https://лярулет.рф/catalog" />
+      <meta property="og:url" content="https://xn--e1alatmd6f.xn--p1ai/catalog" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://лярулет.рф/" },
-          { "@type": "ListItem", "position": 2, "name": "Каталог", "item": "https://лярулет.рф/catalog" }
+          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://xn--e1alatmd6f.xn--p1ai/" },
+          { "@type": "ListItem", "position": 2, "name": "Каталог", "item": "https://xn--e1alatmd6f.xn--p1ai/catalog" }
         ]
       })}</script>
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "ItemList",
         "name": "Каталог куличей Ля Рулет",
-        "url": "https://лярулет.рф/catalog",
+        "url": "https://xn--e1alatmd6f.xn--p1ai/catalog",
         "itemListElement": items
           .filter(item => item.price)
           .map((item, index) => ({
@@ -73,7 +73,7 @@ export function CatalogPage() {
               "@type": "Product",
               "name": item.name,
               "description": item.description,
-              "image": `https://лярулет.рф${item.image}`,
+              "image": `https://xn--e1alatmd6f.xn--p1ai${item.image}`,
               "offers": {
                 "@type": "Offer",
                 "price": item.price,
