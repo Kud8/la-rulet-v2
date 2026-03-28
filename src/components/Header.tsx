@@ -29,6 +29,17 @@ export function Header() {
           {/* Desktop navigation */}
           <nav className="hidden lg:flex space-x-10 items-center">
             <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                `text-sm font-medium tracking-widest uppercase transition-colors duration-300 ${
+                  isActive ? 'text-accent' : 'hover:text-accent'
+                }`
+              }
+            >
+              Главная
+            </NavLink>
+            <NavLink
               to="/catalog"
               className={({ isActive }) =>
                 `text-sm font-medium tracking-widest uppercase transition-colors duration-300 ${

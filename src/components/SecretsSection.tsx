@@ -116,10 +116,10 @@ export function SecretsSection() {
                 деталям композиции."
               </p>
             </div>
-            <button className="inline-flex items-center space-x-2 text-accent hover:text-brown transition-colors duration-300 font-medium uppercase tracking-widest text-sm border-b border-accent hover:border-brown pb-1">
+            <a href="/catalog" className="inline-flex items-center space-x-2 text-accent hover:text-brown transition-colors duration-300 font-medium uppercase tracking-widest text-sm border-b border-accent hover:border-brown pb-1">
               <span>Смотреть варианты упаковки</span>
               <ArrowIcon />
-            </button>
+            </a>
           </div>
           <div className="relative group">
             <div className="absolute inset-0 bg-accent/10 transform -translate-x-4 translate-y-4 -z-10 transition-transform group-hover:-translate-x-6 group-hover:translate-y-6" />

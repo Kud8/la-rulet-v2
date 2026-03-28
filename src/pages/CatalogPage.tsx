@@ -5,26 +5,28 @@ type Category = 'all' | 'decoration' | 'filling';
 interface CatalogItem {
   id: number;
   name: string;
+  description: string;
   image: string;
   category: 'decoration' | 'filling';
   categoryLabel: string;
-  price: number;
+  price?: number;
   weight?: number;
 }
 
 const items: CatalogItem[] = [
-  { id: 9, name: 'Ванильный крем', image: '/fillings/vanilla-cream.jpg', category: 'filling', categoryLabel: 'Начинки', price: 1000, weight: 900 },
-  { id: 10, name: 'Кофейный', image: '/fillings/coffee.jpg', category: 'filling', categoryLabel: 'Начинки', price: 1000, weight: 900 },
-  { id: 11, name: 'Фисташка', image: '/fillings/pistachio.jpg', category: 'filling', categoryLabel: 'Начинки', price: 1200, weight: 900 },
-  { id: 12, name: 'Шоколадный', image: '/fillings/chocolate.jpg', category: 'filling', categoryLabel: 'Начинки', price: 1000, weight: 900 },
-  { id: 1, name: 'Красный петушок', image: '/decoration/red-rooster.jpg', category: 'decoration', categoryLabel: 'Украшения', price: 100 },
-  { id: 2, name: 'Голубой петушок', image: '/decoration/blue-rooster.jpg', category: 'decoration', categoryLabel: 'Украшения', price: 100 },
-  { id: 3, name: 'Гнездо', image: '/decoration/nest.jpg', category: 'decoration', categoryLabel: 'Украшения', price: 100 },
-  { id: 4, name: 'Зайчик', image: '/decoration/bunny.jpg', category: 'decoration', categoryLabel: 'Украшения', price: 100 },
-  { id: 5, name: 'Васильки', image: '/decoration/cornflowers.jpg', category: 'decoration', categoryLabel: 'Украшения', price: 100 },
-  { id: 6, name: 'Верба', image: '/decoration/willow.jpg', category: 'decoration', categoryLabel: 'Украшения', price: 100 },
-  { id: 7, name: 'ХВ', image: '/decoration/easter-hv.jpg', category: 'decoration', categoryLabel: 'Украшения', price: 100 },
-  { id: 8, name: 'ХВ с цукатами', image: '/decoration/easter-hv-fruits.jpg', category: 'decoration', categoryLabel: 'Украшения', price: 100 },];
+  { id: 9, name: 'Сливочный крем', description: 'Воздушная, тающая начинка с нежным сливочным вкусом. Лёгкая текстура и мягкая сладость идеально дополняют пышное тесто кулича, создавая ощущение уюта и домашнего тепла.', image: '/fillings/vanilla-cream.jpg', category: 'filling', categoryLabel: 'Начинки', price: 1800, weight: 700 },
+  { id: 10, name: 'Кофейный крем', description: 'Насыщенный крем с деликатными кофейными нотами и лёгкой карамельной глубиной. Идеальный баланс сладости и благородной горчинки для тех, кто любит более выразительные вкусы.', image: '/fillings/coffee.jpg', category: 'filling', categoryLabel: 'Начинки', price: 1800, weight: 700 },
+  { id: 11, name: 'Крем Фисташка', description: 'Густая, бархатистая начинка с ярким вкусом натуральной фисташки. Лёгкая ореховая сладость и кремовая текстура делают этот вариант особенно изысканным и запоминающимся.', image: '/fillings/pistachio.jpg', category: 'filling', categoryLabel: 'Начинки', price: 2100, weight: 700 },
+  { id: 12, name: 'Шоколадный кулич', description: 'Насыщенное шоколадное тесто с мягкой, влажной текстурой и глубоким вкусом какао. Настоящее удовольствие для любителей шоколада — ярко, сочно и очень ароматно.', image: '/fillings/chocolate.jpg', category: 'filling', categoryLabel: 'Начинки', price: 1660, weight: 550 },
+  { id: 1, name: 'Красный петушок', description: 'Яркий и выразительный декор с традиционным петушком в насыщенных красных оттенках. Символ уюта, достатка и праздника, который сразу притягивает внимание и создаёт атмосферу торжества.', image: '/decoration/red-rooster.jpg', category: 'decoration', categoryLabel: 'Декор' },
+  { id: 2, name: 'Голубой петушок', description: 'Нежный вариант с изящным голубым петушком и цветочными акцентами. Лёгкий, утончённый декор с весенним настроением — для тех, кто ценит мягкость и гармонию в деталях.', image: '/decoration/blue-rooster.jpg', category: 'decoration', categoryLabel: 'Декор' },
+  { id: 3, name: 'Гнездо', description: 'Нежный кулич с уютным «гнездышком» из хрустящей соломки и шоколада, украшенный миниатюрными яйцами и дольками апельсина. Символ тепла, уюта и зарождения новой жизни — идеальный выбор для праздничного стола.', image: '/decoration/nest.jpg', category: 'decoration', categoryLabel: 'Декор' },
+  { id: 4, name: 'Зайчик', description: 'Очаровательный весенний декор с кокосовой шапочкой, яркими акцентами и фигуркой зайчика. Лёгкий, игривый и по-настоящему праздничный — особенно понравится детям и создаст атмосферу радости.', image: '/decoration/bunny.jpg', category: 'decoration', categoryLabel: 'Декор' },
+  { id: 5, name: 'Васильки', description: 'Элегантный кулич с белоснежной глазурью, украшенный нежными цветами василька. Утончённый и воздушный декор с нотками прованского настроения для ценителей классики и минимализма.', image: '/decoration/cornflowers.jpg', category: 'decoration', categoryLabel: 'Декор' },
+  { id: 6, name: 'Верба', description: 'Традиционный пасхальный стиль с отсылкой к веточкам вербы — символу весны и обновления. Сдержанный, благородный декор с мягкими пастельными оттенками.', image: '/decoration/willow.jpg', category: 'decoration', categoryLabel: 'Декор' },
+  { id: 7, name: 'ХВ', description: 'Классический кулич с лаконичной надписью «ХВ», украшенный орехами и крендельками. Тёплый, домашний и знакомый с детства вкус, воплощённый в стильном исполнении.', image: '/decoration/easter-hv.jpg', category: 'decoration', categoryLabel: 'Декор' },
+  { id: 8, name: 'ХВ с цукатами', description: 'Яркий и праздничный вариант с изобилием цукатов, ягод и орехов. Сочная палитра и богатый декор делают этот кулич настоящим центром внимания на пасхальном столе.', image: '/decoration/easter-hv-fruits.jpg', category: 'decoration', categoryLabel: 'Декор' },
+];
 
 export function CatalogPage() {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
@@ -35,7 +37,7 @@ export function CatalogPage() {
 
   const tabs: { key: Category; label: string }[] = [
     { key: 'all', label: 'Все' },
-    { key: 'decoration', label: 'Украшения' },
+    { key: 'decoration', label: 'Декор' },
     { key: 'filling', label: 'Начинки' },
   ];
 
@@ -52,7 +54,7 @@ export function CatalogPage() {
         </div>
         <h1 className="font-serif text-5xl lg:text-6xl text-brown mb-6">Каталог</h1>
         <p className="font-sans text-brown-light max-w-xl mx-auto leading-relaxed text-sm md:text-base">
-          Нежные бисквиты, тающие начинки и изысканный декор. Идеальное дополнение к утреннему кофе или вечернему чаепитию.
+          Пышные куличи с богатыми начинками и выразительным декором - идеальный центр пасхального стола.
         </p>
       </section>
 
@@ -84,7 +86,7 @@ export function CatalogPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
           {filtered.map((item) => (
             <article key={item.id} className="group flex flex-col h-full bg-cream-light">
-              <a href="#" className="block relative overflow-hidden mb-5 bg-cream aspect-[3/4] rounded-[2px]">
+              <div className="block relative overflow-hidden mb-5 bg-cream aspect-[3/4] rounded-[2px]">
                 <img
                   src={item.image}
                   alt={item.name}
@@ -94,25 +96,30 @@ export function CatalogPage() {
                   {item.categoryLabel}
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </a>
+              </div>
               <div className="flex flex-col flex-grow px-1">
-                <a href="#" className="block mb-2">
+                <div className="block mb-2">
                   <h2 className="font-serif text-2xl text-brown group-hover:text-accent transition-colors leading-tight">
                     {item.name}
                   </h2>
-                </a>
-                <div className="mt-auto flex items-end justify-between border-t border-brown/10 pt-4">
-                  <div className="flex flex-col">
-                    {item.weight && (
-                      <span className="font-sans text-[10px] text-brown-light/70 uppercase tracking-widest mb-1">
-                        Вес: {item.weight} г
-                      </span>
-                    )}
-                    <span className="font-sans font-medium text-brown text-lg">
-                      {item.price} ₽
-                    </span>
-                  </div>
                 </div>
+                <p className="font-sans text-xs text-brown-light leading-relaxed mb-4">
+                  {item.description}
+                </p>
+                {item.price && (
+                  <div className="mt-auto flex items-end justify-between border-t border-brown/10 pt-4">
+                    <div className="flex flex-col">
+                      {item.weight && (
+                        <span className="font-sans text-[10px] text-brown-light/70 uppercase tracking-widest mb-1">
+                          Вес: {item.weight} г
+                        </span>
+                      )}
+                      <span className="font-sans font-medium text-brown text-lg">
+                        {item.price} ₽
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
             </article>
           ))}
