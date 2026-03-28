@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function PreorderBanner() {
   return (
     <section id="preorder" className="bg-brown py-12 px-6 relative overflow-hidden">
@@ -46,16 +48,22 @@ export function PreorderBanner() {
           </div>
         </div>
 
-        <div>
+        <div className="flex flex-col items-center sm:items-start gap-3 w-full sm:w-auto">
           <a
             href="https://max.ru/u/f9LHodD0cOL4oqr05wGq-6bByoLuE37wmxGbzQWMB-SnqZznQwMqs7eZzZM"
             target="_blank"
             rel="noreferrer"
             aria-label="Оформить предзаказ в мессенджере Max"
-            className="inline-block bg-transparent border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-widest text-xs font-medium transition-all duration-300"
+            className="block w-full text-center bg-transparent border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-widest text-xs font-medium transition-all duration-300"
           >
             Оформить предзаказ
           </a>
+          <Link
+            to="/catalog"
+            className="block w-full text-center bg-transparent border border-cream/30 text-cream/70 hover:border-cream hover:text-cream px-8 py-3 uppercase tracking-widest text-xs font-medium transition-all duration-300"
+          >
+            Посмотреть каталог
+          </Link>
         </div>
       </div>
     </section>
