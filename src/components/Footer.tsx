@@ -38,7 +38,7 @@ export function Footer() {
         {/* Brand */}
         <div>
           <NavLink to="/" className="inline-block mb-6">
-            <img src="/logo.png" alt="Ля Рулет" className="h-14" />
+            <img src="/logo.png" alt="Ля Рулет" className="h-14" loading="lazy" />
           </NavLink>
           <p className="font-sans text-sm text-cream/70 leading-relaxed">
             Кафе-кондитерская в г. Волгодонск. Создаём десерты с любовью к традициям и вниманием к деталям.

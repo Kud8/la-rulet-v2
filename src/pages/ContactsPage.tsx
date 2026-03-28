@@ -62,6 +62,14 @@ export function ContactsPage() {
       <meta property="og:title" content="Контакты — Ля Рулет, Волгодонск" />
       <meta property="og:description" content="Три точки кафе-кондитерской Ля Рулет в Волгодонске. Адреса, телефон и время работы." />
       <meta property="og:url" content="https://лярулет.рф/contacts" />
+      <script type="application/ld+json">{JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://лярулет.рф/" },
+          { "@type": "ListItem", "position": 2, "name": "Контакты", "item": "https://лярулет.рф/contacts" }
+        ]
+      })}</script>
       <script type="application/ld+json">{JSON.stringify([
         {
           "@context": "https://schema.org",

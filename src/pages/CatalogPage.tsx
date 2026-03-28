@@ -53,6 +53,14 @@ export function CatalogPage() {
       <meta property="og:url" content="https://лярулет.рф/catalog" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://лярулет.рф/" },
+          { "@type": "ListItem", "position": 2, "name": "Каталог", "item": "https://лярулет.рф/catalog" }
+        ]
+      })}</script>
+      <script type="application/ld+json">{JSON.stringify({
+        "@context": "https://schema.org",
         "@type": "ItemList",
         "name": "Каталог куличей Ля Рулет",
         "url": "https://лярулет.рф/catalog",
@@ -126,6 +134,7 @@ export function CatalogPage() {
                   src={item.image}
                   alt={item.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
                 />
                 <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 text-[9px] uppercase tracking-widest text-brown border border-brown/10">
                   {item.categoryLabel}

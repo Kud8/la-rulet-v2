@@ -55,6 +55,7 @@ export function HeroSection() {
               src="/other/table-1.jpg"
               alt="Стол с пасхальной выпечкой"
               className="w-full h-full object-cover arch-mask border-8 border-cream-light"
+              fetchPriority="high"
             />
           </div>
 
@@ -64,6 +65,7 @@ export function HeroSection() {
               src="/other/table-2.jpg"
               alt="Авторская выпечка Ля Рулет"
               className="w-full h-full object-cover rounded-sm border-8 border-cream-light"
+              loading="lazy"
             />
 
             {/* Badge */}

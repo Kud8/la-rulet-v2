@@ -52,6 +52,7 @@ export function SecretsSection() {
               src="/fillings/pistachio-2.jpg"
               alt="Текстура и начинка кулича крупным планом"
               className="w-full aspect-[4/5] object-cover shadow-md"
+              loading="lazy"
             />
           </div>
           <div className="order-1 lg:order-2 lg:pl-12">
@@ -127,6 +128,7 @@ export function SecretsSection() {
               src="/decoration/nest-2.jpg"
               alt="Оформление пасхального стола и упаковка"
               className="w-full aspect-[4/5] object-cover shadow-md"
+              loading="lazy"
             />
           </div>
         </div>
