@@ -17,6 +17,9 @@ export function PreorderBanner() {
           <p className="font-sans font-light text-cream/80 tracking-wide">
             Принимаем заказы до 3 апреля.
           </p>
+          <p className="font-sans text-sm text-accent mt-3 tracking-wide inline-flex items-center gap-2">
+            Бесплатная доставка при заказе от 2 000 ₽
+          </p>
         </div>
 
         <div className="flex items-center gap-6">
@@ -44,9 +47,15 @@ export function PreorderBanner() {
         </div>
 
         <div>
-          <button aria-label="Перейти к выбору формы кулича" className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-widest text-xs font-medium transition-all duration-300">
-            Перейти к формам
-          </button>
+          <a
+            href="https://max.ru/u/f9LHodD0cOL4oqr05wGq-6bByoLuE37wmxGbzQWMB-SnqZznQwMqs7eZzZM"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Оформить предзаказ в мессенджере Max"
+            className="inline-block bg-transparent border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-widest text-xs font-medium transition-all duration-300"
+          >
+            Оформить предзаказ
+          </a>
         </div>
       </div>
     </section>
