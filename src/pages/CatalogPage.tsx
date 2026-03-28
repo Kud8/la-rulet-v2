@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 type Category = 'all' | 'decoration' | 'filling';
 
@@ -42,6 +43,40 @@ export function CatalogPage() {
   ];
 
   return (
+    <>
+    <Helmet>
+      <title>Каталог куличей — Ля Рулет, Волгодонск</title>
+      <meta name="description" content="Каталог авторских куличей Ля Рулет. Сливочный, кофейный, фисташковый и шоколадный крем. Богатый декор на выбор. Ручная работа, г. Волгодонск." />
+      <link rel="canonical" href="https://лярулет.рф/catalog" />
+      <meta property="og:title" content="Каталог куличей — Ля Рулет, Волгодонск" />
+      <meta property="og:description" content="Авторские куличи с богатыми начинками и изысканным декором. Ручная работа от шеф-кондитера." />
+      <meta property="og:url" content="https://лярулет.рф/catalog" />
+      <script type="application/ld+json">{JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Каталог куличей Ля Рулет",
+        "url": "https://лярулет.рф/catalog",
+        "itemListElement": items
+          .filter(item => item.price)
+          .map((item, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+              "@type": "Product",
+              "name": item.name,
+              "description": item.description,
+              "image": `https://лярулет.рф${item.image}`,
+              "offers": {
+                "@type": "Offer",
+                "price": item.price,
+                "priceCurrency": "RUB",
+                "availability": "https://schema.org/InStock",
+                "seller": { "@type": "Organization", "name": "Ля Рулет" }
+              }
+            }
+          }))
+      })}</script>
+    </Helmet>
     <main className="flex-grow pt-20 lg:pt-40">
       {/* Page header */}
       <section className="px-6 lg:px-12 text-center mb-12 relative">
@@ -126,5 +161,6 @@ export function CatalogPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

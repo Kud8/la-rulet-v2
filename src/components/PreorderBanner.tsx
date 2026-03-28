@@ -44,7 +44,7 @@ export function PreorderBanner() {
         </div>
 
         <div>
-          <button className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-widest text-xs font-medium transition-all duration-300">
+          <button aria-label="Перейти к выбору формы кулича" className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-widest text-xs font-medium transition-all duration-300">
             Перейти к формам
           </button>
         </div>

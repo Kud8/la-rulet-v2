@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { locations } from '../data/locations';
 
 const socials = [
@@ -53,6 +54,78 @@ const socials = [
 
 export function ContactsPage() {
   return (
+    <>
+    <Helmet>
+      <title>Контакты — Ля Рулет, Волгодонск</title>
+      <meta name="description" content="Три точки кафе-кондитерской Ля Рулет в Волгодонске: БВП 47А, ТРЦ Весенний, Магнит на Курчатова. Телефон, соцсети, время работы." />
+      <link rel="canonical" href="https://лярулет.рф/contacts" />
+      <meta property="og:title" content="Контакты — Ля Рулет, Волгодонск" />
+      <meta property="og:description" content="Три точки кафе-кондитерской Ля Рулет в Волгодонске. Адреса, телефон и время работы." />
+      <meta property="og:url" content="https://лярулет.рф/contacts" />
+      <script type="application/ld+json">{JSON.stringify([
+        {
+          "@context": "https://schema.org",
+          "@type": "Bakery",
+          "name": "Ля Рулет",
+          "url": "https://лярулет.рф",
+          "telephone": "+79959898598",
+          "email": "info@rouletterie.ru",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "БВП 47А",
+            "addressLocality": "Волгодонск",
+            "addressRegion": "Ростовская область",
+            "addressCountry": "RU"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "08:00",
+            "closes": "22:00"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Bakery",
+          "name": "Ля Рулет — ТРЦ Весенний",
+          "url": "https://лярулет.рф",
+          "telephone": "+79959898598",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ТРЦ Весенний, фудкорт",
+            "addressLocality": "Волгодонск",
+            "addressRegion": "Ростовская область",
+            "addressCountry": "RU"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "10:00",
+            "closes": "22:00"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Bakery",
+          "name": "Ля Рулет — Магнит на Курчатова",
+          "url": "https://лярулет.рф",
+          "telephone": "+79959898598",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Магнит на Курчатова",
+            "addressLocality": "Волгодонск",
+            "addressRegion": "Ростовская область",
+            "addressCountry": "RU"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "09:00",
+            "closes": "22:00"
+          }
+        }
+      ])}</script>
+    </Helmet>
     <main className="flex-grow pt-20 lg:pt-40 pb-12 lg:pb-24">
       {/* Page header */}
       <section className="px-6 lg:px-12 text-center mb-8 lg:mb-16">
@@ -159,5 +232,6 @@ export function ContactsPage() {
         </section>
       </div>
     </main>
+    </>
   );
 }

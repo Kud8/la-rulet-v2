@@ -10,7 +10,6 @@ export function Header() {
     <header className="fixed w-full z-50 top-0 border-b border-brown/10 bg-cream-light/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
-        {/* Mobile */}
         <div className="flex lg:hidden justify-between items-center h-16">
           <NavLink to="/" className="max-[400px]:hidden">
             <img src="/logo-2.png" alt="Ля Рулет" className="h-6" />
@@ -22,7 +21,6 @@ export function Header() {
           </nav>
         </div>
 
-        {/* Desktop */}
         <div className="hidden lg:flex justify-between items-center h-24">
           <nav className="flex space-x-10 items-center">
             <NavLink to="/" end className={navLinkClass}>Главная</NavLink>
@@ -35,7 +33,6 @@ export function Header() {
 
           <NavLink to="/contacts" className={navLinkClass}>Контакты</NavLink>
         </div>
-
       </div>
     </header>
   );

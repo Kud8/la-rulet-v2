@@ -47,7 +47,7 @@ export function Footer() {
 
         {/* Addresses */}
         <div>
-          <h4 className="font-serif text-lg tracking-widest uppercase mb-6 text-accent">Адреса</h4>
+          <h3 className="font-serif text-lg tracking-widest uppercase mb-6 text-accent">Адреса</h3>
           <ul className="space-y-5 font-sans text-sm text-cream/80">
             {locations.map((loc) => (
               <li key={loc.address}>
@@ -67,7 +67,7 @@ export function Footer() {
 
         {/* Contacts */}
         <div>
-          <h4 className="font-serif text-lg tracking-widest uppercase mb-6 text-accent">Контакты</h4>
+          <h3 className="font-serif text-lg tracking-widest uppercase mb-6 text-accent">Контакты</h3>
           <ul className="space-y-4 font-sans text-sm text-cream/80 mb-6">
             <li className="flex items-center">
               <PhoneIcon />

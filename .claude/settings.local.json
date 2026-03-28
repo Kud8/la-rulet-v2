@@ -5,7 +5,10 @@
       "Bash(npm run dev:*)",
       "Bash(curl:*)",
       "Bash(npm run:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(grep:*)",
+      "Bash(grep -n \"<img\" /Users/dmitry/WebstormProjects/la-rulet-v2/src/components/*.tsx)",
+      "Bash(npx tsc:*)"
     ]
   }
 }
