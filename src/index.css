@@ -13,8 +13,8 @@
   --color-accent: #C5A07C;
   --color-accent-dark: #A3805D;
 
-  --font-serif: "Cormorant Garamond", serif;
-  --font-sans: "Montserrat", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Nunito", sans-serif;
 
   --spacing-128: 32rem;
   --spacing-144: 36rem;
@@ -29,6 +29,10 @@ body {
 .arch-mask {
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .smooth-scroll {

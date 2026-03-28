@@ -42,7 +42,7 @@ export function CatalogPage() {
   ];
 
   return (
-    <main className="flex-grow pt-32 lg:pt-40">
+    <main className="flex-grow pt-20 lg:pt-40">
       {/* Page header */}
       <section className="px-6 lg:px-12 text-center mb-12 relative">
         <div className="inline-flex items-center space-x-4 mb-4">

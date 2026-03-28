@@ -1,6 +1,6 @@
 export function HeroSection() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative pt-20 pb-20 lg:pt-40 lg:pb-32 min-h-[90vh] flex items-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-cream-light to-cream opacity-50 -z-10" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -28,7 +28,9 @@ export function HeroSection() {
 
           <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 justify-center lg:justify-start">
             <a
-              href="#preorder"
+              href="https://max.ru/u/f9LHodD0cOL4oqr05wGq-6bByoLuE37wmxGbzQWMB-SnqZznQwMqs7eZzZM"
+              target="_blank"
+              rel="noreferrer"
               className="group relative inline-flex items-center justify-center px-8 py-4 bg-brown text-cream-light overflow-hidden transition-all duration-300 hover:bg-brown-dark w-full sm:w-auto"
             >
               <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-accent rounded-full group-hover:w-56 group-hover:h-56 z-0" />

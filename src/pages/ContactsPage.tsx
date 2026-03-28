@@ -53,9 +53,9 @@ const socials = [
 
 export function ContactsPage() {
   return (
-    <main className="flex-grow pt-32 lg:pt-40 pb-24">
+    <main className="flex-grow pt-20 lg:pt-40 pb-12 lg:pb-24">
       {/* Page header */}
-      <section className="px-6 lg:px-12 text-center mb-16">
+      <section className="px-6 lg:px-12 text-center mb-8 lg:mb-16">
         <div className="inline-flex items-center space-x-4 mb-4">
           <span className="w-8 h-[1px] bg-accent" />
           <span className="font-sans text-accent tracking-[0.2em] text-[10px] font-semibold uppercase">
@@ -69,18 +69,18 @@ export function ContactsPage() {
         </p>
       </section>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 space-y-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 space-y-12 lg:space-y-20">
         {/* Locations */}
         <section>
-          <h2 className="font-serif text-3xl text-brown mb-10 text-center lg:text-left">Наши адреса</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <h2 className="font-serif text-3xl text-brown mb-6 lg:mb-10 text-center lg:text-left">Наши адреса</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
             {locations.map((loc) => (
               <a
                 key={loc.address}
                 href={loc.url}
                 target="_blank"
                 rel="noreferrer"
-                className="group block border border-brown/10 p-8 hover:border-accent transition-colors duration-300"
+                className="group block border border-brown/10 p-6 lg:p-8 hover:border-accent transition-colors duration-300"
               >
                 <div className="flex items-start mb-4">
                   <svg className="w-5 h-5 mr-3 mt-0.5 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,10 +96,10 @@ export function ContactsPage() {
                     <circle cx="12" cy="12" r="10" strokeWidth="1.5" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6v6l4 2" />
                   </svg>
-                  <span className="font-sans text-sm text-brown-light">{loc.hours}</span>
+                  <span className="font-sans text-base text-brown-light">{loc.hours}</span>
                 </div>
                 <div className="mt-6 ml-8">
-                  <span className="font-sans text-[10px] uppercase tracking-widest text-accent border-b border-accent/40 pb-0.5 group-hover:border-accent transition-colors">
+                  <span className="font-sans text-xs uppercase tracking-widest text-accent border-b border-accent/40 pb-0.5 group-hover:border-accent transition-colors">
                     Открыть на карте →
                   </span>
                 </div>
@@ -109,9 +109,9 @@ export function ContactsPage() {
         </section>
 
         {/* Phone & Email */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
           <a href="tel:+79959898598"
-            className="group flex items-center space-x-6 border border-brown/10 p-8 hover:border-accent transition-colors duration-300">
+            className="group flex items-center space-x-6 border border-brown/10 p-5 lg:p-8 hover:border-accent transition-colors duration-300">
             <div className="w-14 h-14 rounded-full border border-accent/40 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors flex-shrink-0">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -124,7 +124,7 @@ export function ContactsPage() {
           </a>
 
           <a href="mailto:info@rouletterie.ru"
-            className="group flex items-center space-x-6 border border-brown/10 p-8 hover:border-accent transition-colors duration-300">
+            className="group flex items-center space-x-6 border border-brown/10 p-5 lg:p-8 hover:border-accent transition-colors duration-300">
             <div className="w-14 h-14 rounded-full border border-accent/40 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors flex-shrink-0">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -139,15 +139,15 @@ export function ContactsPage() {
 
         {/* Social media */}
         <section className="text-center lg:text-left">
-          <h2 className="font-serif text-3xl text-brown mb-8">Мы в социальных сетях</h2>
-          <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+          <h2 className="font-serif text-3xl text-brown mb-5 lg:mb-8">Мы в социальных сетях</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {socials.map(({ label, href, icon }) => (
               <a
                 key={label}
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-center space-x-3 border border-brown/10 px-6 py-4 hover:border-accent transition-colors duration-300"
+                className="group flex items-center space-x-3 border border-brown/10 px-5 py-4 hover:border-accent transition-colors duration-300"
               >
                 <span className="text-accent group-hover:scale-110 transition-transform">{icon}</span>
                 <span className="font-sans text-sm text-brown group-hover:text-accent transition-colors tracking-wide">
