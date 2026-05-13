@@ -17,7 +17,7 @@ export function PreorderBanner() {
             Предзаказ к Светлой Пасхе
           </h2>
           <p className="font-sans font-light text-cream/80 tracking-wide">
-            Принимаем заказы до 3 апреля.
+            Принимаем заказы до 10 апреля.
           </p>
           <p className="font-sans text-sm text-accent mt-3 tracking-wide inline-flex items-center gap-2">
             Бесплатная доставка при заказе от 2 000 ₽

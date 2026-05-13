@@ -9,7 +9,15 @@
       "Bash(grep:*)",
       "Bash(grep -n \"<img\" /Users/dmitry/WebstormProjects/la-rulet-v2/src/components/*.tsx)",
       "Bash(npx tsc:*)",
-      "Bash(xargs sed:*)"
+      "Bash(xargs sed:*)",
+      "WebFetch(domain:help.reg.ru)",
+      "WebSearch",
+      "WebFetch(domain:www.reg.ru)",
+      "WebFetch(domain:qna.habr.com)",
+      "Bash(npx shadcn@4.6.0 init --defaults --yes)",
+      "Bash(npm view *)",
+      "Bash(npx shadcn@4.5.0 init --defaults --yes)",
+      "Bash(npx shadcn@4.5.0 init --help)"
     ]
   }
 }
