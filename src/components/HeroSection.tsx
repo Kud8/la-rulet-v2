@@ -1,3 +1,6 @@
+import GradientText from '@/components/GradientText/GradientText';
+import ShinyText from '@/components/ShinyText/ShinyText';
+
 export function HeroSection() {
   return (
     <section className="relative pt-20 pb-20 lg:pt-40 lg:pb-32 min-h-[90vh] flex items-center overflow-hidden">
@@ -8,14 +11,24 @@ export function HeroSection() {
         <div className="lg:col-span-5 z-10 order-2 lg:order-1 pt-10 lg:pt-0 text-center lg:text-left">
           <div className="inline-flex items-center space-x-4 mb-6">
             <span className="w-12 h-[1px] bg-accent" />
-            <span className="font-sans text-accent tracking-[0.2em] text-xs font-semibold uppercase">
-              Лимитированная серия
-            </span>
+            <ShinyText
+              text="Лимитированная серия"
+              color="#C9A36B"
+              shineColor="#FFF4D6"
+              speed={3}
+              className="font-sans tracking-[0.2em] text-xs font-semibold uppercase"
+            />
           </div>
 
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-brown mb-6">
             Искусство <br />
-            <span className="italic font-light text-brown-light">Пасхального</span>
+            <GradientText
+              colors={['#C9A36B', '#7B4C2B', '#E8C77F', '#C9A36B']}
+              animationSpeed={10}
+              className="italic font-light inline-block"
+            >
+              Пасхального
+            </GradientText>
             <br />
             Утра
           </h1>

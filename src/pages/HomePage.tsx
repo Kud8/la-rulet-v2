@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { HeroSection, PreorderBanner, SecretsSection } from '../components';
+import Silk from '@/components/Silk/Silk';
 
 export function HomePage() {
   return (
@@ -55,6 +56,9 @@ export function HomePage() {
           ]
         })}</script>
       </Helmet>
+      <div className="fixed inset-0 -z-10 pointer-events-none">
+        {/*<Silk speed={3.6} scale={0.8} color="#ffd349" noiseIntensity={0.7} rotation={0} />*/}
+      </div>
       <main>
         <HeroSection />
         <PreorderBanner />
