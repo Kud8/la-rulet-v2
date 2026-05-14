@@ -1,5 +1,11 @@
 export { Header } from './Header';
 export { HeroSection } from './HeroSection';
-export { PreorderBanner } from './PreorderBanner';
-export { SecretsSection } from './SecretsSection';
+export { CategoryShowcase } from './CategoryShowcase';
+export { CakesLanding } from './CakesLanding';
+export { PhilosophySection } from './PhilosophySection';
+export { OrderCTA } from './OrderCTA';
+export { CakeCard } from './CakeCard';
+export { BakeryCard } from './BakeryCard';
+export { VariantCard } from './VariantCard';
+export { CatalogTabs } from './CatalogTabs';
 export { Footer } from './Footer';

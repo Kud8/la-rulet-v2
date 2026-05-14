@@ -17,7 +17,18 @@
       "Bash(npx shadcn@4.6.0 init --defaults --yes)",
       "Bash(npm view *)",
       "Bash(npx shadcn@4.5.0 init --defaults --yes)",
-      "Bash(npx shadcn@4.5.0 init --help)"
+      "Bash(npx shadcn@4.5.0 init --help)",
+      "Read(//tmp/**)",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_close",
+      "Bash(npx eslint *)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "shadcn"
+  ]
 }
