@@ -2,64 +2,84 @@ import type { BakeryItem, Cake, SeasonKey, Variant } from '../types/menu';
 
 export const cakes: Cake[] = [
   {
-    id: 1,
-    name: 'Муссовое сердце с малиной',
-    description:
-      'Воздушный муссовый торт с малиновым конфи и нежным кремом, в праздничном оформлении.',
-    price: 2100,
-    imageUrl: '/images/cakes/raspberry-heart.jpg',
-  },
-  {
-    id: 2,
-    name: 'Муссовое сердце из шоколада',
-    description:
-      'Шоколадный мусс, хрустящий слой и какао-глазурь — эффектный десерт для особого случая.',
-    price: 2100,
-    imageUrl: '/images/cakes/chocolate-heart.jpg',
-  },
-  {
-    id: 3,
-    name: 'Красный бархат',
-    description:
-      'Классический бархат с кремчизом и ягодным акцентом. Яркий, сочный, праздничный.',
-    price: 2000,
-    imageUrl: '/images/cakes/red-velvet.jpg',
-  },
-  {
-    id: 4,
-    name: 'Малина-шоколад',
-    description: 'Шоколадный бисквит, малиновое конфи, кремчиз. Богатый вкус и ягоды.',
-    price: 2200,
-    imageUrl: '/images/cakes/raspberry-chocolate.jpg',
-  },
-  {
-    id: 5,
-    name: 'Наполеон',
-    description: 'Классический Наполеон с хрустящими коржами и ванильно-сливочным кремом.',
-    price: 2000,
-    imageUrl: '/images/cakes/napoleon.jpg',
-  },
-  {
-    id: 6,
-    name: 'Смородина-ваниль',
-    description: 'Ванильный бисквит, смородиновое компоте, лёгкий мусс. Баланс кислинки и нежности.',
-    price: 2100,
-    imageUrl: '/images/cakes/currant-vanilla.jpg',
-  },
-  {
-    id: 7,
-    name: 'Миндаль-кокос',
-    description: 'Кокосовый бисквит, миндальный пралине и сливочный крем.',
-    price: 1800,
-    imageUrl: '/images/cakes/almond-coconut.jpg',
-  },
-  {
+    "id": 1,
+    "name": "Капучино-бейлис",
+    "description": "Нежный кофейный бисквит с кремчизом и ганашем на молочном шоколаде, пропитанный ароматным кофейным ликером.",
+    "price": 2400,
+    "imageUrl": "/images/cakes/cappuccino-baileys.jpg"
+  }, {
+    "id": 2,
+    "name": "Красный бархат",
+    "description": "Шоколадный бисквит с клубничным конфи и воздушным кремчизом на основе сыра Филадельфия.",
+    "price": 2500,
+    "imageUrl": "/images/cakes/red-velvet.jpg"
+  }, {
+    "id": 3,
+    "name": "Наполеон",
+    "description": "Классический торт с домашними хрустящими коржами и нежным заварным кремом на сливочном масле со сгущенкой.",
+    "price": 2200,
+    "imageUrl": "/images/cakes/napoleon.jpg"
+  }, {
+    "id": 4,
+    "name": "Пломбир",
+    "description": "Сочетание шоколадного и ванильного бисквитов с белым и шоколадным муссом на сливках, сгущенке и шоколадной крошке.",
+    "price": 2600,
+    "imageUrl": "/images/cakes/plombir.jpg"
+  }, {
+    "id": 5,
+    "name": "Молочная девочка",
+    "description": "Нежные коржи на сгущенке с воздушным сливочным кремом и ягодным конфи.",
+    "price": 2300,
+    "imageUrl": "/images/cakes/molocnaya-devochka.jpg"
+  }, {
+    "id": 6,
+    "name": "Баунти",
+    "description": "Кокосовый бисквит с заварным кремом на кокосовом молоке, маскарпоне, сливками и ганашем на молочном шоколаде.",
+    "price": 2500,
+    "imageUrl": "/images/cakes/bounty.jpg"
+  }, {
+    "id": 7,
+    "name": "Черный лес",
+    "description": "Шоколадный бисквит с кремчизом на сыре Филадельфия и насыщенным вишневым конфи.",
+    "price": 2400,
+    "imageUrl": "/images/cakes/black-forest.jpg"
+  }, {
+    "id": 8,
+    "name": "Фисташка-малина",
+    "description": "Ванильный бисквит с фисташковой пастой, кремчизом, нежным малиновым муссом и ярким малиновым конфи.",
+    "price": 2700,
+    "imageUrl": "/images/cakes/pistachio-raspberry.jpg"
+  }, {
+    "id": 9,
+    "name": "Малина-ваниль",
+    "description": "Воздушный ванильный бисквит с кремчизом, малиновым муссом и натуральным малиновым конфи.",
+    "price": 2400,
+    "imageUrl": "/images/cakes/raspberry-vanilla.jpg"
+  }, {
+    "id": 10,
+    "name": "Йогуртовый персик",
+    "description": "Кокосовый бисквит с нежным йогуртовым муссом на маскарпоне, сочными персиками и ароматной персиковой пропиткой.",
+    "price": 2500,
+    "imageUrl": "/images/cakes/yogurt-peach.jpg"
+  }, {
+    "id": 11,
+    "name": "Морковный",
+    "description": "Пряный морковный бисквит с кремчизом и соленой карамелью, создающей идеальный баланс вкусов.",
+    "price": 2300,
+    "imageUrl": "/images/cakes/carrot.jpg"
+  }, {
+    "id": 12,
+    "name": "Сникерс-чизкейк",
+    "description": "Классический чизкейк с соленой карамелью, жареным арахисом и бортиками из шоколадного печенья.",
+    "price": 2700,
+    "imageUrl": "/images/cakes/snickers-cheesecake.jpg"
+  }, {
     id: 8,
     name: 'Мистер Профитроль',
     description: 'Шоколадный бисквит, кремчиз и профитроли в декоре. Эффектно и сытно.',
     price: 2400,
     imageUrl: '/images/cakes/mr-profiterole.jpg',
-  },
+  }
 ];
 
 export const croissants: BakeryItem[] = [
