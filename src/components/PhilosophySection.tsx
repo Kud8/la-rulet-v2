@@ -95,8 +95,8 @@ export function PhilosophySection() {
           <div className="relative group">
             <div className="absolute inset-0 bg-accent/10 transform -translate-x-4 translate-y-4 -z-10 transition-transform group-hover:-translate-x-6 group-hover:translate-y-6" />
             <img
-              src="/images/cakes/raspberry-chocolate.jpg"
-              alt="Авторский торт с ручным декором"
+              src="/images/variants/decoration.jpg"
+              alt="Авторские торты ручным декором"
               className="w-full aspect-[4/5] object-cover shadow-md"
               loading="lazy"
             />

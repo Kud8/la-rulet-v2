@@ -62,21 +62,21 @@ export function HeroSection() {
 
         {/* Images */}
         <div className="lg:col-span-7 relative h-[500px] sm:h-[600px] lg:h-[700px] w-full order-1 lg:order-2 flex justify-center lg:block">
-          <div className="absolute right-4 lg:right-0 top-0 w-[65%] sm:w-[55%] h-[85%] z-10 shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
+          <div className="absolute right-4 lg:right-0 top-0 w-[65%] sm:w-[55%] h-[85%] z-10 shadow-2xl transition-transform duration-700 hover:scale-[1.02] arch-mask">
             <img
-              src="/other/table-1.jpg"
-              alt="Витрина кафе-кондитерской Ля Рулет"
+              src="/other/main2.jpg"
+              alt="Торты в городе Волгодонск"
               className="w-full h-full object-cover arch-mask border-8 border-cream-light"
               fetchPriority="high"
             />
           </div>
 
-          <div className="absolute left-4 lg:left-12 bottom-0 w-[60%] sm:w-[50%] h-[60%] z-20 shadow-xl transition-transform duration-700 hover:scale-[1.03]">
+          <div className="absolute left-4 lg:left-12 bottom-0 w-[60%] sm:w-[50%] h-[65%] z-20 shadow-xl transition-transform duration-700 hover:scale-[1.03]">
             <img
-              src="/other/table-2.jpg"
-              alt="Авторская выпечка ручной работы"
+              src="/other/main1.jpg"
+              alt="Торты в городе Волгодонск"
               className="w-full h-full object-cover rounded-sm border-8 border-cream-light"
-              loading="lazy"
+              fetchPriority="high"
             />
 
             <div className="absolute -bottom-6 -left-6 bg-cream-light rounded-full p-4 shadow-lg flex flex-col items-center justify-center w-28 h-28 border border-accent/20">

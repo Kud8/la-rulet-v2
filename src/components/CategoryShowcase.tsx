@@ -12,20 +12,20 @@ const categories: Category[] = [
   {
     title: 'Торты на заказ',
     tagline: 'Любой повод, индивидуальный декор и начинка',
-    image: '/images/cakes/raspberry-heart.jpg',
+    image: '/images/variants/cakes.jpg',
     href: '#cakes',
     isAnchor: true,
   },
   {
     title: 'Круассаны',
     tagline: 'Свежая слойка каждое утро — миндаль, нутелла, карамель',
-    image: '/images/croissants/croissant-almond.jpg',
+    image: '/images/croissants/assorti.jpg',
     href: '/catalog?tab=croissants',
   },
   {
     title: 'Варианты декора',
     tagline: 'Идеи и референсы для индивидуального оформления',
-    image: '/images/variants/other/flowers.jpg',
+    image: '/images/variants/decoration.jpg',
     href: '/catalog?tab=variants',
   },
 ];
