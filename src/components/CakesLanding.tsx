@@ -9,7 +9,7 @@ import { socials } from '../data/social';
 const VISIBLE_LIMIT = 6;
 
 export function CakesLanding() {
-  const visible = cakes.slice(0, VISIBLE_LIMIT);
+  const visible = cakes.slice(6, 6 + VISIBLE_LIMIT);
   const hasMore = cakes.length > VISIBLE_LIMIT;
 
   return (
@@ -35,7 +35,7 @@ export function CakesLanding() {
             <span className="w-8 h-[1px] bg-accent" />
           </div>
           <h2 className="font-serif text-4xl lg:text-5xl text-brown leading-tight">
-            Авторские десерты{' '}
+            Авторские торты{' '}
             <GradientText
               colors={['#C5A07C', '#7A6B5D', '#DBC3A9', '#C5A07C']}
               animationSpeed={10}

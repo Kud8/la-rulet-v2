@@ -32,7 +32,7 @@ const categories: Category[] = [
 
 export function CategoryShowcase() {
   return (
-    <section className="py-20 lg:py-28 px-6 lg:px-12 bg-cream-light/40">
+    <section className="py-20 lg:py-28 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <div className="inline-flex items-center space-x-4 mb-4">

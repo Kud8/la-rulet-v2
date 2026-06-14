@@ -7,7 +7,7 @@ interface CakeCardProps {
 
 export function CakeCard({ cake }: CakeCardProps) {
   return (
-    <article className="group flex flex-col h-full bg-cream-light">
+    <article className="group flex flex-col h-full">
       <a
         href={socials.max}
         target="_blank"

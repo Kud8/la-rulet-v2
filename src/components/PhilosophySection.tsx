@@ -13,7 +13,7 @@ function CheckIcon() {
 
 export function PhilosophySection() {
   return (
-    <section id="philosophy" className="py-24 lg:py-32 bg-cream-light px-6 lg:px-12">
+    <section id="philosophy" className="py-24 lg:py-32 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <span className="font-sans text-accent tracking-[0.2em] text-xs font-semibold uppercase block mb-4">
