@@ -80,14 +80,14 @@ const socialButtons = [
 
 export function Footer() {
   return (
-    <footer className="bg-brown-dark text-cream-light py-8 lg:py-10 px-6 lg:px-12 border-t border-brown">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12">
+    <footer className="bg-brown-dark text-cream-light py-6 lg:py-8 px-6 lg:px-12 border-t border-brown">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6 lg:gap-x-12">
         {/* Brand */}
         <div>
-          <NavLink to="/" className="inline-block mb-4">
-            <img src="/logo.png" alt="Ля Рулет" className="h-10" loading="lazy" />
+          <NavLink to="/" className="inline-block mb-3">
+            <img src="/logo.png" alt="Ля Рулет" className="h-9" loading="lazy" />
           </NavLink>
-          <p className="font-sans text-sm text-cream/70 leading-relaxed">
+          <p className="font-sans text-sm text-cream/70 leading-relaxed max-w-sm">
             Кафе-кондитерская в г. Волгодонск. Авторские торты на заказ, свежие круассаны и
             десерты каждый день.
           </p>
@@ -95,8 +95,8 @@ export function Footer() {
 
         {/* Addresses */}
         <div>
-          <h3 className="font-serif text-base tracking-widest uppercase mb-4 text-accent">Адреса</h3>
-          <ul className="space-y-3 font-sans text-sm text-cream/80">
+          <h3 className="font-serif text-base tracking-widest uppercase mb-3 text-accent">Адреса</h3>
+          <ul className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-2.5 font-sans text-sm text-cream/80">
             {locations.map((loc) => (
               <li key={loc.address}>
                 <a
@@ -119,8 +119,8 @@ export function Footer() {
 
         {/* Contacts */}
         <div>
-          <h3 className="font-serif text-base tracking-widest uppercase mb-4 text-accent">Контакты</h3>
-          <ul className="space-y-3 font-sans text-sm text-cream/80 mb-4">
+          <h3 className="font-serif text-base tracking-widest uppercase mb-3 text-accent">Контакты</h3>
+          <ul className="space-y-2 font-sans text-sm text-cream/80 mb-4">
             <li className="flex items-center">
               <PhoneIcon />
               <a href={`tel:${contacts.phoneRaw}`} className="hover:text-accent transition-colors">
@@ -152,7 +152,7 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="max-w-7xl mx-auto mt-6 lg:mt-8 pt-4 lg:pt-5 border-t border-cream/10 flex flex-col md:flex-row justify-between items-center text-xs text-cream/50 font-sans">
+      <div className="max-w-7xl mx-auto mt-5 lg:mt-6 pt-4 border-t border-cream/10 flex flex-col md:flex-row justify-between items-center text-xs text-cream/50 font-sans">
         <p>&copy; 2026 Кафе-кондитерская «Ля Рулет», г. Волгодонск. Все права защищены.</p>
       </div>
     </footer>
