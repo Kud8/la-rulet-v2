@@ -28,7 +28,6 @@ export function PhilosophySection() {
         {/* Block 1: Taste */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24 lg:mb-32">
           <div className="order-2 lg:order-1 relative group">
-            <div className="absolute inset-0 bg-accent/10 transform translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-6 group-hover:translate-y-6" />
             <img
               src="/images/croissants/croissant-almond-2.jpg"
               alt="Текстура свежего круассана крупным планом"
@@ -93,7 +92,6 @@ export function PhilosophySection() {
             </div>
           </div>
           <div className="relative group">
-            <div className="absolute inset-0 bg-accent/10 transform -translate-x-4 translate-y-4 -z-10 transition-transform group-hover:-translate-x-6 group-hover:translate-y-6" />
             <img
               src="/images/variants/decoration.jpg"
               alt="Авторские торты ручным декором"

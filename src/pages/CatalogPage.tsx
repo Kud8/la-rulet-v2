@@ -219,7 +219,7 @@ export function CatalogPage() {
           )}
         </section>
 
-        <OrderCTA />
+        <OrderCTA variant="light" />
       </main>
     </>
   );

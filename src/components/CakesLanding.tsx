@@ -68,8 +68,10 @@ export function CakesLanding() {
           </div>
         )}
 
-        {/* Inline CTA */}
-        <div className="mt-20 lg:mt-24 bg-cream border border-accent/30 px-6 lg:px-12 py-12 text-center">
+        {/* Inline CTA — liquid glass panel */}
+        <div className="relative overflow-hidden mt-20 lg:mt-24 px-6 lg:px-12 py-12 text-center rounded-2xl border border-white/50 bg-linear-to-br from-white/45 to-white/15 backdrop-blur-xl shadow-[0_10px_40px_-8px_rgba(122,107,93,0.25)]">
+          {/* top-edge sheen */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/70 to-transparent" />
           <h3 className="font-serif text-2xl lg:text-3xl text-brown mb-4">
             Хотите свой вариант?
           </h3>

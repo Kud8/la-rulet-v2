@@ -3,16 +3,17 @@ import type { BakeryItem, Cake, SeasonKey, Variant } from '../types/menu';
 export const cakes: Cake[] = [
   {
     "id": 1,
-    "name": "Капучино-бейлис",
-    "description": "Нежный кофейный бисквит с кремчизом и ганашем на молочном шоколаде, пропитанный ароматным кофейным ликером.",
-    "price": 2400,
-    "imageUrl": "/images/cakes/cappuccino-baileys.jpg"
+    "name": "Пломбир",
+    "description": "Сочетание шоколадного и ванильного бисквитов с белым и шоколадным муссом на сливках, сгущенке и шоколадной крошке.",
+    "price": 2000,
+    "weight": 2,
+    "imageUrl": "/images/cakes/plombir.jpg"
   }, {
     "id": 2,
-    "name": "Красный бархат",
-    "description": "Шоколадный бисквит с клубничным конфи и воздушным кремчизом на основе сыра Филадельфия.",
-    "price": 2500,
-    "imageUrl": "/images/cakes/red-velvet.jpg"
+    "name": "Молочная девочка",
+    "description": "Нежные коржи на сгущенке с воздушным сливочным кремом и ягодным конфи.",
+    "price": 2300,
+    "imageUrl": "/images/cakes/molocnaya-devochka.jpg"
   }, {
     "id": 3,
     "name": "Наполеон",
@@ -21,16 +22,16 @@ export const cakes: Cake[] = [
     "imageUrl": "/images/cakes/napoleon.jpg"
   }, {
     "id": 4,
-    "name": "Пломбир",
-    "description": "Сочетание шоколадного и ванильного бисквитов с белым и шоколадным муссом на сливках, сгущенке и шоколадной крошке.",
-    "price": 2600,
-    "imageUrl": "/images/cakes/plombir.jpg"
+    "name": "Капучино-бейлис",
+    "description": "Нежный кофейный бисквит с кремчизом и ганашем на молочном шоколаде, пропитанный ароматным кофейным ликером.",
+    "price": 2400,
+    "imageUrl": "/images/cakes/cappuccino-baileys.jpg"
   }, {
     "id": 5,
-    "name": "Молочная девочка",
-    "description": "Нежные коржи на сгущенке с воздушным сливочным кремом и ягодным конфи.",
-    "price": 2300,
-    "imageUrl": "/images/cakes/molocnaya-devochka.jpg"
+    "name": "Красный бархат",
+    "description": "Шоколадный бисквит с клубничным конфи и воздушным кремчизом на основе сыра Филадельфия.",
+    "price": 2500,
+    "imageUrl": "/images/cakes/red-velvet.jpg"
   }, {
     "id": 6,
     "name": "Баунти",

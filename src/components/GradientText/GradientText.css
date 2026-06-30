@@ -6,10 +6,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-radius: 1.25rem;
   font-weight: 500;
-  backdrop-filter: blur(10px);
   transition: box-shadow 0.5s ease-out;
+}
+
+/* Pill/badge chrome — only when an animated gradient border is requested.
+   Kept off the plain-text variant so it doesn't clip descenders (р, у)
+   or overlap the line above via the rounded box / backdrop blur. */
+.animated-gradient-text.with-border {
+  border-radius: 1.25rem;
+  backdrop-filter: blur(10px);
   overflow: hidden;
   cursor: pointer;
 }

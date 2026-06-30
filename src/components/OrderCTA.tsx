@@ -16,7 +16,7 @@ export function OrderCTA({
   return (
     <section
       className={`relative overflow-hidden py-14 lg:py-20 px-6 lg:px-12 ${
-        isDark ? 'bg-brown-dark text-cream-light' : 'bg-cream-light text-brown'
+        isDark ? 'bg-brown-dark text-cream-light' : 'bg-cream text-brown border-t border-brown/10'
       }`}
     >
       <div
@@ -72,10 +72,10 @@ export function OrderCTA({
           </a>
           <a
             href={`tel:${contacts.phoneRaw}`}
-            className={`text-sm tracking-[0.15em] uppercase font-medium border-b pb-1 transition-colors ${
+            className={`text-sm tracking-[0.15em] uppercase font-medium underline-offset-4 decoration-accent hover:underline transition-colors ${
               isDark
-                ? 'text-cream/80 border-transparent hover:border-accent hover:text-accent'
-                : 'text-brown border-transparent hover:border-accent hover:text-accent'
+                ? 'text-cream/80 hover:text-accent'
+                : 'text-brown hover:text-accent'
             }`}
           >
             Позвонить

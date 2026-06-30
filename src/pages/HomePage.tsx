@@ -6,7 +6,6 @@ import {
   PhilosophySection,
   OrderCTA,
 } from '../components';
-import Silk from '@/components/Silk/Silk';
 import { siteUrl, socials, contacts } from '../data/social';
 
 export function HomePage() {
@@ -71,7 +70,7 @@ export function HomePage() {
         <CategoryShowcase />
         <CakesLanding />
         <PhilosophySection />
-        <OrderCTA />
+        <OrderCTA variant="light" />
       </main>
     </>
   );
