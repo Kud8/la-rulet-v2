@@ -52,7 +52,7 @@ export function HomePage() {
             location: [
               { '@type': 'Place', name: 'БВП 47А', openingHours: 'Mo-Su 08:00-22:00' },
               { '@type': 'Place', name: 'ТРЦ Весенний, фудкорт', openingHours: 'Mo-Su 10:00-22:00' },
-              { '@type': 'Place', name: '30 лет победы, 18', openingHours: 'Mo-Su 08:00-22:00' },
+              { '@type': 'Place', name: '30 лет победы, 18', openingHours: 'Mo-Su 00:00-24:00' },
               { '@type': 'Place', name: 'Магнит на Курчатова', openingHours: 'Mo-Su 09:00-22:00' },
             ],
             sameAs: [socials.instagram, socials.telegram, socials.vk],

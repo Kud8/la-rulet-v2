@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { locations } from '../data/locations';
+import { getOpeningHoursSpecification, locations } from '../data/locations';
 import { socials, contacts, siteUrl } from '../data/social';
 
 const socialButtons = [
@@ -19,15 +19,6 @@ const socialButtons = [
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <line x1="22" y1="2" x2="11" y2="13" strokeWidth="1.5" />
         <polygon points="22 2 15 22 11 13 2 9 22 2" strokeWidth="1.5" />
-      </svg>
-    ),
-  },
-  {
-    label: 'WhatsApp',
-    href: socials.whatsapp,
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
       </svg>
     ),
   },
@@ -82,7 +73,7 @@ export function ContactsPage() {
         <script type="application/ld+json">
           {JSON.stringify(
             locations.map((loc) => {
-              const [opens, closes] = loc.hours.split('–').map((s) => s.trim());
+              const openingHours = getOpeningHoursSpecification(loc.hours);
               return {
                 '@context': 'https://schema.org',
                 '@type': 'Bakery',
@@ -96,20 +87,7 @@ export function ContactsPage() {
                   addressRegion: 'Ростовская область',
                   addressCountry: 'RU',
                 },
-                openingHoursSpecification: {
-                  '@type': 'OpeningHoursSpecification',
-                  dayOfWeek: [
-                    'Monday',
-                    'Tuesday',
-                    'Wednesday',
-                    'Thursday',
-                    'Friday',
-                    'Saturday',
-                    'Sunday',
-                  ],
-                  opens: normalizeHour(opens),
-                  closes: normalizeHour(closes),
-                },
+                ...(openingHours && { openingHoursSpecification: openingHours }),
               };
             }),
           )}
@@ -240,10 +218,4 @@ export function ContactsPage() {
       </main>
     </>
   );
-}
-
-function normalizeHour(time: string): string {
-  // "8:00" -> "08:00"
-  const [h, m = '00'] = time.split(':');
-  return `${h.padStart(2, '0')}:${m}`;
 }

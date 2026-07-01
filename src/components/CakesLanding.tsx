@@ -14,10 +14,6 @@ export function CakesLanding() {
 
   return (
     <section id="cakes" className="relative py-24 lg:py-32 px-6 lg:px-12 overflow-hidden">
-      {/* Soft Silk backdrop */}
-      <div className="absolute inset-0 -z-10 opacity-30 pointer-events-none">
-        <Silk speed={2} scale={1.1} color="#DBC3A9" noiseIntensity={0.4} rotation={0} />
-      </div>
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-cream-light/85 to-cream/70 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
