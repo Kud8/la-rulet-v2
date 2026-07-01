@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import GradientText from '@/components/GradientText/GradientText';
 import ShinyText from '@/components/ShinyText/ShinyText';
-import Silk from '@/components/Silk/Silk';
 import { CakeCard } from './CakeCard';
 import { cakes } from '../utils/menu';
 import { socials } from '../data/social';
