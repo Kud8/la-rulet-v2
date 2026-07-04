@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { locations } from '../data/locations';
 import { contacts, socials } from '../data/social';
+import { asset } from '../utils/utils';
 
 function LocationIcon() {
   return (
@@ -76,7 +77,7 @@ export function Footer() {
         {/* Brand */}
         <div>
           <NavLink to="/" className="inline-block mb-3">
-            <img src="/logo.png" alt="Ля Рулет" className="h-9" loading="lazy" />
+            <img src={asset('logo.png')} alt="Ля Рулет" className="h-9" loading="lazy" />
           </NavLink>
           <p className="font-sans text-sm text-cream/70 leading-relaxed max-w-sm">
             Кафе-кондитерская в г. Волгодонск. Авторские торты на заказ, свежие круассаны и

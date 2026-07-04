@@ -1,5 +1,6 @@
 import type { Cake } from '../types/menu';
 import { socials } from '../data/social';
+import { asset } from '../utils/utils';
 
 interface CakeCardProps {
   cake: Cake;
@@ -15,7 +16,7 @@ export function CakeCard({ cake }: CakeCardProps) {
         className="block relative overflow-hidden mb-5 bg-cream aspect-[3/4] rounded-[2px]"
       >
         <img
-          src={cake.imageUrl}
+          src={asset(cake.imageUrl)}
           alt={cake.name}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading="lazy"

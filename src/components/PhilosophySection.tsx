@@ -1,3 +1,5 @@
+import { asset } from '../utils/utils';
+
 function CheckIcon() {
   return (
     <svg
@@ -29,7 +31,7 @@ export function PhilosophySection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24 lg:mb-32">
           <div className="order-2 lg:order-1 relative group">
             <img
-              src="/images/croissants/croissant-almond-2.jpg"
+              src={asset('images/croissants/croissant-almond-2.jpg')}
               alt="Текстура свежего круассана крупным планом"
               className="w-full aspect-[4/5] object-cover shadow-md"
               loading="lazy"
@@ -93,7 +95,7 @@ export function PhilosophySection() {
           </div>
           <div className="relative group">
             <img
-              src="/images/variants/decoration.jpg"
+              src={asset('images/variants/decoration.jpg')}
               alt="Авторские торты ручным декором"
               className="w-full aspect-[4/5] object-cover shadow-md"
               loading="lazy"

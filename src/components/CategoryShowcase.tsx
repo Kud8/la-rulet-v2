@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { asset } from '../utils/utils';
 
 interface Category {
   title: string;
@@ -52,7 +53,7 @@ export function CategoryShowcase() {
               <article className="group relative overflow-hidden block h-full bg-cream">
                 <div className="aspect-[4/5] overflow-hidden relative">
                   <img
-                    src={cat.image}
+                    src={asset(cat.image)}
                     alt={cat.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"

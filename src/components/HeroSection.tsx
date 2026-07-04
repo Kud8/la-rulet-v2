@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import GradientText from '@/components/GradientText/GradientText';
 import ShinyText from '@/components/ShinyText/ShinyText';
 import { socials } from '../data/social';
+import { asset } from '../utils/utils';
 
 export function HeroSection() {
   return (
@@ -64,7 +65,7 @@ export function HeroSection() {
         <div className="lg:col-span-7 relative h-[500px] sm:h-[600px] lg:h-[700px] w-full order-1 lg:order-2 flex justify-center lg:block">
           <div className="absolute right-4 lg:right-0 top-0 w-[65%] sm:w-[55%] h-[85%] z-10 shadow-2xl transition-transform duration-700 hover:scale-[1.02] arch-mask">
             <img
-              src="/other/main2.jpg"
+              src={asset('other/main2.jpg')}
               alt="Торты в городе Волгодонск"
               className="w-full h-full object-cover arch-mask border-8 border-cream-light"
               fetchPriority="high"
@@ -73,7 +74,7 @@ export function HeroSection() {
 
           <div className="absolute left-4 lg:left-12 bottom-0 w-[60%] sm:w-[50%] h-[65%] z-20 shadow-xl transition-transform duration-700 hover:scale-[1.03]">
             <img
-              src="/other/main1.jpg"
+              src={asset('other/main1.jpg')}
               alt="Торты в городе Волгодонск"
               className="w-full h-full object-cover rounded-sm border-8 border-cream-light"
               fetchPriority="high"

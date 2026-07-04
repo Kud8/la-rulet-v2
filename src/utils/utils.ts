@@ -13,3 +13,8 @@ export const handleTg = () => {
 }
 
 export const PHONE_NUMBER = "+7 (995) 98-98-5-98"
+
+// Префиксует пути к файлам из public/ базовым путём сайта (import.meta.env.BASE_URL),
+// чтобы сборка работала и в корне домена, и на подпути вида /la-rulet-v2/
+export const asset = (path: string) =>
+    import.meta.env.BASE_URL + path.replace(/^\//, '');

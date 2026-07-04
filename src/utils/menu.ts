@@ -1,4 +1,5 @@
 import type { BakeryItem, Cake, SeasonKey, Variant } from '../types/menu';
+import { asset } from './utils';
 
 export const cakes: Cake[] = [
   {
@@ -185,11 +186,11 @@ export const variants: Variant[] = [
 ];
 
 export function getVariantImageUrl(variant: Variant): string {
-  return `/images/variants/${variant.seasonKey}/${variant.imgName}`;
+  return asset(`images/variants/${variant.seasonKey}/${variant.imgName}`);
 }
 
 export function getCroissantImageUrl(name: string): string {
-  return `/images/croissants/${name}`;
+  return asset(`images/croissants/${name}`);
 }
 
 export function getSeasonTitle(key: SeasonKey): string {

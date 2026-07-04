@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { asset } from '../utils/utils';
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `text-sm font-medium tracking-widest uppercase transition-colors duration-300 ${
@@ -12,7 +13,7 @@ export function Header() {
 
         <div className="flex lg:hidden justify-between items-center h-16">
           <NavLink to="/" className="max-[400px]:hidden">
-            <img src="/logo-2.png" alt="Ля Рулет" className="h-6" />
+            <img src={asset('logo-2.png')} alt="Ля Рулет" className="h-6" />
           </NavLink>
           <nav className="flex items-center space-x-3">
             <NavLink to="/" end className={navLinkClass}>Главная</NavLink>
@@ -28,7 +29,7 @@ export function Header() {
           </nav>
 
           <NavLink to="/" className="absolute left-1/2 transform -translate-x-1/2">
-            <img src="/logo-2.png" alt="Ля Рулет" className="h-14" />
+            <img src={asset('logo-2.png')} alt="Ля Рулет" className="h-14" />
           </NavLink>
 
           <NavLink to="/contacts" className={navLinkClass}>Контакты</NavLink>

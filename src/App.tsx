@@ -11,7 +11,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <div className="font-sans antialiased overflow-x-hidden flex flex-col min-h-screen">
         <Header />
