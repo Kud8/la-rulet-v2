@@ -12,12 +12,12 @@ export function CakeCard({ cake }: CakeCardProps) {
         href={socials.max}
         target="_blank"
         rel="noreferrer"
-        className="block relative overflow-hidden mb-5 bg-cream aspect-[3/4] rounded-[2px]"
+        className="block relative overflow-hidden mb-5 bg-cream aspect-[2/3] rounded-[2px]"
       >
         <img
           src={cake.imageUrl}
           alt={cake.name}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="w-full h-full object-cover object-bottom transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
