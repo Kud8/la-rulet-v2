@@ -8,7 +8,7 @@ import { socials } from '../data/social';
 const VISIBLE_LIMIT = 6;
 
 export function CakesLanding() {
-  const visible = cakes.slice(6, 6 + VISIBLE_LIMIT);
+  const visible = cakes.slice(0, VISIBLE_LIMIT);
   const hasMore = cakes.length > VISIBLE_LIMIT;
 
   return (

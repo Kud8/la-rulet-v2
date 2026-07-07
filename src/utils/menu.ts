@@ -2,13 +2,6 @@ import type { BakeryItem, Cake, SeasonKey, Variant } from '../types/menu';
 
 export const cakes: Cake[] = [
   {
-    "id": 1,
-    "name": "Пломбир",
-    "description": "Два вида бисквитов: ванильный и шоколадный, а также два вида муссов: шоколадный и ванильный с шоколадной крошкой.",
-    "price": 2200,
-    "weight": 2,
-    "imageUrl": "/images/cakes/plombir.jpg"
-  }, {
     "id": 2,
     "name": "Молочная девочка",
     "description": "Нежные коржи со сгущенкой, малиновое конфи и воздушный сливочный кем",
@@ -23,12 +16,12 @@ export const cakes: Cake[] = [
     "weight": 2,
     "imageUrl": "/images/cakes/napoleon.jpg"
   }, {
-    "id": 4,
-    "name": "Капучино-бейлис",
-    "description": "Нежный кремччиз, шоколадный бисквит на кофейно-ликерной пропитке и ганаш на молочном шоколаде",
-    "price": 2100,
-    "weight": 1.5,
-    "imageUrl": "/images/cakes/cappuccino-baileys.jpg"
+    "id": 15,
+    "name": "Медовик",
+    "description": "Медовые коржи, клюквенное конфи, сметанный крем",
+    "price": 1900,
+    "weight": 2,
+    "imageUrl": "/images/cakes/medovik.jpg"
   }, {
     "id": 5,
     "name": "Красный бархат",
@@ -37,19 +30,12 @@ export const cakes: Cake[] = [
     "weight": 2,
     "imageUrl": "/images/cakes/red-velvet.jpg"
   }, {
-    "id": 6,
-    "name": "Баунти",
-    "description": "Кокосовый бисквит с кокосовым кремом, маскарпоне, сливками и ганашем на молочном шоколаде",
-    "price": 1900,
+    "id": 11,
+    "name": "Морковный",
+    "description": "Нежный кремчиз, сочный морковный бисквит, карамель и попкорн",
+    "price": 1700,
     "weight": 1.5,
-    "imageUrl": "/images/cakes/bounty.jpg"
-  }, {
-    "id": 7,
-    "name": "Черный лес",
-    "description": "Шоколадный бисквит, нежный кремчиз и вишневое конфи",
-    "price": 1900,
-    "weight": 1.7,
-    "imageUrl": "/images/cakes/black-forest.jpg"
+    "imageUrl": "/images/cakes/carrot.jpg"
   }, {
     "id": 8,
     "name": "Фисташка-малина",
@@ -58,12 +44,12 @@ export const cakes: Cake[] = [
     "weight": 1.7,
     "imageUrl": "/images/cakes/pistachio-raspberry.jpg"
   }, {
-    "id": 9,
-    "name": "Малина-ваниль",
-    "description": "Нежный кремчиз, воздушный ванильный бисквит, малиновый мусс, малиновое конфи",
+    "id": 12,
+    "name": "Сникерс-чизкейк",
+    "description": "Шоколадный бисквит, классический чизкейк с соленой карамелью и арахисом",
     "price": 2000,
     "weight": 1.5,
-    "imageUrl": "/images/cakes/raspberry-vanilla.jpg"
+    "imageUrl": "/images/cakes/snickers-cheesecake.jpg"
   }, {
     "id": 10,
     "name": "Йогуртовый персик",
@@ -72,26 +58,26 @@ export const cakes: Cake[] = [
     "weight": 1.5,
     "imageUrl": "/images/cakes/yogurt-peach.jpg"
   }, {
-    "id": 11,
-    "name": "Морковный",
-    "description": "Нежный кремчиз, сочный морковный бисквит, карамель и попкорн",
-    "price": 1700,
+    "id": 4,
+    "name": "Капучино-бейлис",
+    "description": "Нежный кремччиз, шоколадный бисквит на кофейно-ликерной пропитке и ганаш на молочном шоколаде",
+    "price": 2100,
     "weight": 1.5,
-    "imageUrl": "/images/cakes/carrot.jpg"
+    "imageUrl": "/images/cakes/cappuccino-baileys.jpg"
   }, {
-    "id": 12,
-    "name": "Сникерс-чизкейк",
-    "description": "Шоколадный бисквит, классический чизкейк с соленой карамелью и арахисом",
+    "id": 9,
+    "name": "Малина-ваниль",
+    "description": "Нежный кремчиз, воздушный ванильный бисквит, малиновый мусс, малиновое конфи",
     "price": 2000,
     "weight": 1.5,
-    "imageUrl": "/images/cakes/snickers-cheesecake.jpg"
+    "imageUrl": "/images/cakes/raspberry-vanilla.jpg"
   }, {
-    "id": 13,
-    "name": "Мистер Профитроль",
-    "description": "Шоколадный бисквит, шоколадный мусс и профитроли с заварным кремом.",
-    "price": 2000,
-    "weight": 1.5,
-    "imageUrl": "/images/cakes/mr-profiterole.jpg"
+    "id": 1,
+    "name": "Пломбир",
+    "description": "Два вида бисквитов: ванильный и шоколадный, а также два вида муссов: шоколадный и ванильный с шоколадной крошкой.",
+    "price": 2200,
+    "weight": 2,
+    "imageUrl": "/images/cakes/plombir.jpg"
   }, {
     "id": 14,
     "name": "Мак лимон",
@@ -100,12 +86,26 @@ export const cakes: Cake[] = [
     "weight": 1.5,
     "imageUrl": "/images/cakes/mac-limon.jpg"
   }, {
-    "id": 15,
-    "name": "Медовик",
-    "description": "Медовые коржи, клюквенное конфи, сметанный крем",
+    "id": 7,
+    "name": "Черный лес",
+    "description": "Шоколадный бисквит, нежный кремчиз и вишневое конфи",
     "price": 1900,
-    "weight": 2,
-    "imageUrl": "/images/cakes/medovik.jpg"
+    "weight": 1.7,
+    "imageUrl": "/images/cakes/black-forest.jpg"
+  }, {
+    "id": 6,
+    "name": "Баунти",
+    "description": "Кокосовый бисквит с кокосовым кремом, маскарпоне, сливками и ганашем на молочном шоколаде",
+    "price": 1900,
+    "weight": 1.5,
+    "imageUrl": "/images/cakes/bounty.jpg"
+  }, {
+    "id": 13,
+    "name": "Мистер Профитроль",
+    "description": "Шоколадный бисквит, шоколадный мусс и профитроли с заварным кремом.",
+    "price": 2000,
+    "weight": 1.5,
+    "imageUrl": "/images/cakes/mr-profiterole.jpg"
   }, {
     "id": 16,
     "name": "Малина-кофе-шоколад",
