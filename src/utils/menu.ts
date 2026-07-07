@@ -40,21 +40,21 @@ export const cakes: Cake[] = [
     "id": 6,
     "name": "Баунти",
     "description": "Кокосовый бисквит с заварным кремом на кокосовом молоке, маскарпоне, сливками и ганашем на молочном шоколаде.",
-    "price": 1700,
+    "price": 1900,
     "weight": 1.5,
     "imageUrl": "/images/cakes/bounty.jpg"
   }, {
     "id": 7,
     "name": "Черный лес",
     "description": "Шоколадный бисквит с кремчизом на сыре Филадельфия и насыщенным вишневым конфи.",
-    "price": 1700,
+    "price": 1900,
     "weight": 1.7,
     "imageUrl": "/images/cakes/black-forest.jpg"
   }, {
     "id": 8,
     "name": "Фисташка-малина",
     "description": "Ванильный бисквит с фисташковой пастой, кремчизом, нежным малиновым муссом и ярким малиновым конфи.",
-    "price": 1700,
+    "price": 1900,
     "weight": 1.7,
     "imageUrl": "/images/cakes/pistachio-raspberry.jpg"
   }, {
@@ -75,7 +75,7 @@ export const cakes: Cake[] = [
     "id": 11,
     "name": "Морковный",
     "description": "Пряный морковный бисквит с кремчизом и соленой карамелью, создающей идеальный баланс вкусов.",
-    "price": 1500,
+    "price": 1700,
     "weight": 1.5,
     "imageUrl": "/images/cakes/carrot.jpg"
   }, {
@@ -89,9 +89,30 @@ export const cakes: Cake[] = [
     "id": 13,
     "name": "Мистер Профитроль",
     "description": "Шоколадный бисквит, кремчиз и профитроли в декоре. Эффектно и сытно.",
-    "price": 1900,
+    "price": 2000,
     "weight": 1.5,
     "imageUrl": "/images/cakes/mr-profiterole.jpg"
+  }, {
+    "id": 14,
+    "name": "Мак лимон",
+    "description": "Влажный маковый бисквит с ярким лимонным курдом и нежным кремчизом. Освежающая цитрусовая кислинка в каждом кусочке.",
+    "price": 1900,
+    "weight": 1.5,
+    "imageUrl": "/images/cakes/mac-limon.jpg"
+  }, {
+    "id": 15,
+    "name": "Медовик",
+    "description": "Тонкие медовые коржи с нежным сметанным кремом, выдержанные до бархатистой мягкости. Насыщенный вкус настоящего мёда.",
+    "price": 1900,
+    "weight": 2,
+    "imageUrl": "/images/cakes/medovik.jpg"
+  }, {
+    "id": 16,
+    "name": "Малина-кофе-шоколад",
+    "description": "Шоколадный бисквит с ароматным кофейным кремом и ярким малиновым конфи. Насыщенный дуэт кофе и шоколада с ягодной кислинкой.",
+    "price": 2100,
+    "weight": 2,
+    "imageUrl": "/images/cakes/malina-kofe-shokolad.jpg"
   }
 ];
 

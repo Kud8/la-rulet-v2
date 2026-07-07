@@ -32,10 +32,15 @@ export function CakeCard({ cake }: CakeCardProps) {
         <p className="font-sans text-sm text-brown-light leading-relaxed mb-4">
           {cake.description}
         </p>
-        <div className="mt-auto flex items-end justify-between border-t border-brown/10 pt-4">
+        <div className="mt-auto flex items-end justify-between gap-3 border-t border-brown/10 pt-4">
           <span className="font-sans font-medium text-brown text-lg">
             {cake.price.toLocaleString('ru-RU')} ₽ / кг
           </span>
+          {cake.weight && (
+            <span className="font-sans text-sm text-brown-light whitespace-nowrap">
+              от {cake.weight.toLocaleString('ru-RU')} кг
+            </span>
+          )}
         </div>
       </div>
     </article>
